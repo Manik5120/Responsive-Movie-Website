@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Movie Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Movie Hub</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for movies...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search-results" class="hidden">
+            <h2>Search Results</h2>
+            <div class="movie-container" id="searchMovies"></div>
+        </section>
+
+        <section id="trending"+>
+            <h2>Trending Movies</h2>
+            <div class="movie-container" id="trendingMovies"></div>
+        </section>
+    </main>
+
+    <div id="movieDetails" class="modal hidden">
+        <div class="modal-overlay"></div> <!-- Background overlay -->
+        <div class="movie-details-content">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Movie Hub</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
